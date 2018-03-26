@@ -128,13 +128,9 @@ ul {
 }
 
 .pagination-bar > a {
-    display: inline-block;
     margin-right: 10px;
-    padding: 5px 7.5px;
     text-decoration: none;
     min-width: 20px;
-    font-size: 16px;
-    text-align: center;
 }
 
 .pagination-bar > a:not(.disabled) {
@@ -148,22 +144,28 @@ ul {
     border: 1px solid #444;
     background-color: #999;
 }
+
 .pagination-bar > a.active {
     color: #FFF;
     border: 1px solid #9a0000;
     background-color: #9a0000;
 }
+
 .pagination-bar > a:hover{
     border: 1px solid #9a0000;
 }
-.pagination-bar > span:not(.active) {
-    display: inline-block;
-    padding: 5px 7.5px;
+
+.pagination-bar > span {
     margin-left: -5px;
     margin-right: 5px;
+    color: #fff;
+}
+
+.pagination-bar > span, .pagination-bar > a {
+    display: inline-block;
+    padding: 5px 7.5px;
     font-size: 16px;
     text-align: center;
-    color: #fff;
 }
 
 /* 分页代码 */
