@@ -13,7 +13,7 @@ div {
     box-sizing: border-box;
 }
 
-body, ul {
+body, ul, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -89,6 +89,7 @@ ul {
     position: relative;
     background-color: #1f1f1f;
 }
+
 .bottom-footer__wrap{
     height: 125px;
     font-size: 12px;
@@ -98,3 +99,71 @@ ul {
 }
 
 /* common-footer  end*/
+
+/* 公共浮动样式 */
+
+.pull_left{
+    float:left;
+}
+
+.pull_right{
+    float:right;
+}
+
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* 公共浮动样式 */
+
+/* 分页代码 */
+
+.pagination-bar {
+    position: relative;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.pagination-bar > a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 7.5px;
+    text-decoration: none;
+    min-width: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pagination-bar > a:not(.disabled) {
+    color: #333;
+    border: 1px solid #949494;
+    background-color: #949494;
+}
+
+.pagination-bar > a.disabled {
+    color: #bbb;
+    border: 1px solid #444;
+    background-color: #999;
+}
+.pagination-bar > a.active {
+    color: #FFF;
+    border: 1px solid #9a0000;
+    background-color: #9a0000;
+}
+.pagination-bar > a:hover{
+    border: 1px solid #9a0000;
+}
+.pagination-bar > span:not(.active) {
+    display: inline-block;
+    padding: 5px 7.5px;
+    margin-left: -5px;
+    margin-right: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 分页代码 */
