@@ -13,12 +13,12 @@ div {
     box-sizing: border-box;
 }
 
-body, ul, p, h1, h2, h3, h4, h5, h6 {
+body, ul, p, h1, h2, h3, h4, h5, h6, input {
     margin: 0;
+    padding: 0;
 }
 
 ul {
-    padding: 0;
     list-style: none;
 }
 
@@ -37,20 +37,20 @@ ul {
 
 .header {
     position: relative;
-    height: 32px;
-    background-color: #131313;
 }
 
 .header > .top-header__container {
+    height: 32px;
+    background-color: #131313;
     overflow: hidden;
 }
 
 .header > .top-header__container > .top-header__wrap {
-    float: right;
+    overflow: hidden;
 }
 
 .top-header__wrap > ul {
-    overflow: hidden;
+    float: right;
 }
 
 .top-header__wrap > ul > li {
@@ -75,10 +75,87 @@ ul {
     display: none;
 }
 
-.top-header__wrap > ul > li > span {
+.top-header__wrap > ul > li > a {
+    display: inline-block;
     font-size: 12px;
     color: #949494;
     line-height: 32px;
+    text-decoration: none;
+}
+
+.top-header__wrap > ul > li > a.feather {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.top-header__wrap > ul > li > a.feather:first-child {
+    padding-right: 10px;
+}
+
+.top-header__wrap .nickname {
+    color: #8a2924;
+}
+
+.menu-header__container {
+    background-color: #060606;
+}
+
+.menu-header__container > .menu-header__wrap {
+    height: 104px;
+    padding: 18px 0;
+}
+
+.menu-header__wrap > ul > li {
+    float: left;
+    height: 67px;
+    padding: 0 25px;
+    line-height: 67px;
+}
+
+.menu-header__wrap > ul > li > a {
+    display: inline-block;
+    color: #d0d0d0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu-header__wrap > ul > li > a > span {
+    padding: 7px 0;
+}
+
+.menu-header__wrap > ul > li > a > span.active {
+    color: #912b26;
+    border-bottom: 2px solid #912b26;
+}
+
+.menu-header__wrap > ul > li > .menu-search {
+    position: relative;
+    width: 200px;
+    height: 28px;
+    margin: 18px 0;
+    line-height: 28px;
+    border: 1px solid #d0d0d0;
+    border-radius: 14px;
+}
+
+.menu-header__wrap > ul > li > .menu-search > input {
+    width: 160px;
+    height: 28px;
+    margin-left: 12px;
+    font-size: 14px;
+    color: #d0d0d0;
+    line-height: 28px;
+    border: 0;
+    background-color: transparent;
+}
+
+.menu-header__wrap > ul > li > .menu-search > .search-bar {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 16px;
+    height: 28px;
+    background: url('../image/search.png') no-repeat center center;
 }
 
 /* header end */
