@@ -1,0 +1,166 @@
+.declaration-order {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Box-model */
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+
+  /* Typography */
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+
+  /* Visual */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  /* Misc */
+  opacity: 1;
+}
+/* 公共浮动样式 */
+.pull_left{
+    float:left;
+}
+.pull_right{
+    float:right;
+}
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* 关于我们  开始 */
+.about-me__container{
+    background-color:#060606;
+}
+.about-me_wrap{
+    font-family: "STFangsong";
+    text-align: center;
+}
+.about-me_wrap *{
+    margin:0;
+}
+.about-me_wrap h4{
+    font-size: 48px;
+    color:#d0d0d0;    
+}
+.about-me_wrap h5{
+    font-size: 30px;
+    color:#9a0000;    
+}
+.about-me_wrap h6{
+    margin-bottom:10px;
+    font-size: 16px;
+    color:#9a0000;  
+
+   
+}
+.about-me_wrap p{
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 22px;
+    color:#949494;
+
+}
+.about-me_wrap > img{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.about-me__adress_txt,.about-me__adress_img{
+    text-align: left;
+    margin-top:80px;
+    margin-bottom:40px;
+}
+.about-me__adress_txt h5{
+    color:#ffffff;
+}
+.about-me__adress_txt p{
+    font-size:14px;
+    color:#9f9f9f;
+    line-height: 40px;
+}
+.about-me__adress_txt span{
+    margin-right:25px;
+}
+/* 关于我们  结束 */
+/* 详情页 开始 */
+.info__container{
+    background-color: #060606;
+}
+.info_wrap *{
+    margin:0;
+    line-height: 24px;
+    color:#949494;
+}
+.info_wrap h2{
+    text-align: center;
+    font-size:30px;
+    color:#dedede;
+    line-height: 50px; 
+}
+.info_wrap h4{
+    text-align: center;
+    margin-bottom:40px;
+}
+.info_wrap p{
+    text-indent: 2rem;
+}
+.info_wrap h6{
+    font-weight: normal;
+    font-size:14px;
+}
+/* 详情页 结束 */
+/* 分页代码 */
+.pagination-bar {
+    font-size: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.pagination-bar a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 7.5px;
+    text-decoration: none;
+    min-width: 20px;
+    font-size: 16px;
+    
+}
+
+.pagination-bar a:not(.disabled) {
+    background-color: #949494;
+    color: #333;
+    border: 1px solid #949494;
+}
+
+.pagination-bar a.disabled {
+    background-color: #999;
+    color: #bbb;
+    border: 1px solid #444;
+}
+.pagination-bar a.active {
+    background-color: #9a0000;
+    color: #FFF;
+    border: 1px solid #9a0000;
+}
+.pagination-bar a:hover{
+    border: 1px solid #9a0000;
+}
+.pagination-bar span:not(.active) {
+    display: inline-block;
+    padding: 5px 7.5px;
+    font-size: 16px;
+}
+/* 分页代码 */
