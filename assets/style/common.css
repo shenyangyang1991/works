@@ -251,7 +251,8 @@ ul {
 
 .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 340px;
+    overflow: hidden;
 }
 .swiper-slide {
     text-align: center;
@@ -272,14 +273,26 @@ ul {
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper-slide img{
+    width: 100%;
+    height: 360px;
+}
+.swiper-slide > a{
+    display: block;
+}
 .swiper-pagination-bullet {
-    width: 100px;
-    height: 10px;
+    width: 90px;
+    height: 4px;
     opacity: 1;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,1);
+    border-radius: 0;
 }
 .swiper-pagination-bullet-active {
-    background: #007aff;
+    background: #ffffff;
+     width: 90px;
+    height: 4px;
+    opacity: 1;
+    border-radius: 0;
 }
 
 /* banner 轮播图/展示图  结束end*/

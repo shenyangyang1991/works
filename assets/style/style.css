@@ -98,6 +98,7 @@
 
 .info__container {
     background-color: #060606;
+    padding-top:80px;
 }
 
 .info__wrap h4, .info__wrap p, .info__wrap h6 {
@@ -124,3 +125,68 @@
 }
 
 /* 详情页 结束 */
+
+
+/* 资料 start */
+.source__container {
+    background-color:#060606;
+    padding-top:80px;
+}
+
+.source__wrap {
+    font-family: "STFangsong";
+    text-align: center;
+}
+.source__wrap li{
+    margin-bottom:15px;
+    overflow: hidden;
+    padding:25px 50px 0;
+    height:170px;
+    width: 100%;
+    background-color:#252525;
+
+}
+.source__wrap li.active,.source__wrap li:hover{
+    background-color:#9a0000;
+}
+.source__wrap li.active h4, .source__wrap li.active p,.source__wrap li:hover h4, .source__wrap li:hover p{
+    line-height: 24px;
+    color:#fff;
+}
+
+.source__wrap h4, .source__wrap p, .source__wrap h6 {
+    line-height: 24px;
+    color:#949494;
+}
+
+.source__wrap h2 {
+    text-align: left;
+    font-size: 30px;
+    color:#dedede;
+    line-height: 50px; 
+}
+.source__wrap h4 {
+    margin-bottom:15px;
+    text-align: left;  
+}
+.source__wrap p {
+    text-indent: 2rem;
+    text-align: left; 
+    height: 50px;
+    overflow: hidden;
+    margin-bottom:25px;
+}
+.source__switch__title {
+    text-align: center;
+    margin-bottom:50px;
+}
+.source__switch__title span{
+    font-size:30px;
+    color:#363636;
+    text-decoration: underline;
+    margin-left:40px;
+}
+.source__switch__title span.active{
+    color:#9a0000;
+}
+/* 资料  结束end */
