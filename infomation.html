@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>详情页</title>
+    <link rel="stylesheet" href="./assets/style/swiper.min.css">
     <link rel="stylesheet" href="./assets/style/common.css">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
+    <header></header>
+    <div class="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
     <div class="info__container">
         <div class="info__wrap layout">
             <h2>抱朴子内篇校釋</h2>
@@ -82,6 +96,23 @@
             <a href="#" class="page-next ">下一页</a>
         </div>
     </div>
+    <footer></footer>
 </body>
-
+<script src="./js/jquery.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('header').load('./components/common-header.html');
+        $('footer').load('./components/common-footer.html');
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + '</span>';
+                },
+            },
+        });
+    });
+</script>
 </html>

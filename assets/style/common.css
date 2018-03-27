@@ -196,7 +196,7 @@ ul {
 
 /* 公共浮动样式 */
 
-/* 分页代码 */
+/* 分页代码 start*/
 
 .pagination-bar {
     position: relative;
@@ -245,4 +245,41 @@ ul {
     text-align: center;
 }
 
-/* 分页代码 */
+/* 分页代码 end*/
+
+/* banner 轮播图/展示图  start*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-pagination-bullet {
+    width: 100px;
+    height: 10px;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+
+/* banner 轮播图/展示图  结束end*/

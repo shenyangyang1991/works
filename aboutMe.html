@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <header></header>
     <div class="about-me__container">
         <div class="about-me__wrap layout">
             <h4>關于我們</h4>
@@ -58,6 +59,13 @@
 
         </div>
     </div>
+    <footer></footer>
 </body>
-
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('header').load('./components/common-header.html');
+        $('footer').load('./components/common-footer.html')
+    });
+</script>
 </html>
