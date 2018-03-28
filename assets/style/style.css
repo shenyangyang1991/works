@@ -218,7 +218,7 @@
 
 /* 资料  结束end */
 
-/* 列表页 start */
+/* 列表页，收藏页，浏览页 start */
 .lists__container {
     background-color:#060606;
     padding-top:80px;
@@ -236,15 +236,82 @@
     font-size:30px;
     color:#9a0000;
 }
+.lists__content ul{
+    margin-top:35px;
+    margin-left:-13px;
+}
 .lists__content li{
     float: left;
+    display: inline;
     width: 290px;
+    margin-left:13px;
+    margin-bottom: 13px;
+    background-color: #0d0d0d;
+}
+.lists__content li:hover{
+    background-color: #9a0000;
 }
 .lists__content li a{
-    display: block;
+      display: block;
+}
+.lists__content li .pic  a{
+    height: 290px;
+    border-bottom:1px #d0d0d0 solid;
+}
+.lists__content li:hover a{
+    border-bottom:1px #9a0000 solid;
 }
 .lists__content li img{
     width: 290px;
     height: 290px;
 }
-/* 列表页 end */
+.lists__content li .txt{
+     width: 260px;
+    height: 110px;
+    padding: 15px;
+    text-align: left;
+
+}
+.lists__content li h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.lists__content li h5{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.lists__content li p{
+    font-size: 12px;
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+} 
+.lists__content nav{  
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+.lists__content nav span{
+    font-size:30px;
+    color:#9a0000;
+    font-weight: bold;
+}
+.lists__content nav b{
+
+    float: left;
+    font-size: 18px;
+    color: #9a0000;
+    line-height: 43px;
+}
+.lists__content nav .line {  
+    float: right;
+    border-top: 1px solid #252525;
+    width: 90%; 
+    margin-top:19px;
+}  
+.lists__content nav .txt {  
+   color: #686868;  
+   vertical-align: middle;  
+} 
+
+/* 列表页，收藏页，浏览页 end */

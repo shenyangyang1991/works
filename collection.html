@@ -14,15 +14,39 @@
 <body>
     <header></header>
     <div class="banner">
-        <div class="banners">
-            <img src="./assets/image/banner02.jpg">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a>
+                        <img src="./assets/image/banner01.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a>
+                        <img src="./assets/image/banner01.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a>
+                        <img src="./assets/image/banner01.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a>
+                        <img src="./assets/image/banner01.jpg">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <div class="lists__container">
         <div class="lists__wrap layout">
             <div class="lists__title">
-                <h2>自然科學類</h2>
-                <h3>NATURAL SCIENCE</h3>
+                <h2>我的收藏</h2>
+                <h3>My collection</h3>
             </div>
             <div class="lists__content">
                 <ul class="clearfix">
@@ -86,21 +110,6 @@
 
                         </div>
                     </li>
-                    <li>
-                        <div class="pic">
-                            <a href="###">
-                                <img src="./assets/image/1.jpg">
-                            </a>
-                        </div>
-                        <div class="txt">
-                            <a href="###">
-                                <h4>李曦沐</h4>
-                                <h5>原国家测绘局局长</h5>
-                                <p>李曦沐同志1922年10月生，辽宁新宾人。1945年 5月参加革命工作，1945年9月加入中国共产党...</p>
-                            </a>
-
-                        </div>
-                    </li>
                 </ul>
 
             </div>
@@ -134,26 +143,7 @@
                 },
             },
         });
-
-
-        //列表tab切换 
-
-        $(".source__switch__title > span").click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-            $(".source__switch__content > ul").eq($(this).index()).show().siblings().hide();
-        })
-
-
-        // 是否收藏
-        $(".source__switch__content li i").click(function () {
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active");
-                $(this).closest("li").removeClass("active");
-            } else {
-                $(this).addClass("active");
-                $(this).closest("li").addClass("active");
-            }
-        })
+       
     });
 </script>
 
