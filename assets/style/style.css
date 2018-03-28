@@ -379,6 +379,7 @@
 }
 .media__wrap__list{
 
+    font-family: "STFangsong";
 }
 .media__wrap__list ul{
     margin-top:35px;
@@ -417,7 +418,6 @@
 }
 .media__wrap__list li h4{
     font-size: 36px;
-    font-family: "sans-serif";
 }
 
 .media__wrap__list li p{
@@ -427,3 +427,34 @@
     height: 140px;
     overflow: hidden;
 } 
+
+/* 视频页 end */
+
+/* 首页  start*/
+
+.index_container {
+    background-color:#060606;
+    padding-top:30px;
+    font-family: "STFangsong";
+}
+
+.index__wrap {
+    font-family: "STFangsong";
+    text-align: center;
+}
+.media__wrap_title{
+    text-align: center;
+    font-size: 12px;
+    color:#949494;
+}
+.media__wrap_title h3{
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #9a0000;
+}
+.list__wrap__list{
+    text-align: center;
+}
+
+/* 首页 end*/
