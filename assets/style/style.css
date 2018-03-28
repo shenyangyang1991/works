@@ -185,6 +185,7 @@
     margin-left:40px;
     padding-bottom: 10px;
     border-bottom:1px #363636 solid;
+    cursor: pointer;
 }
 .source__switch__title span.active{
     color:#9a0000;
@@ -201,7 +202,6 @@
     height: 22px;
     background: url(../image/heart-circle.png) no-repeat;
 }
-/* .source__wrap li.active, */
 .source__switch__content li:hover{
     background-color:#9a0000;
 }
@@ -217,3 +217,34 @@
 }
 
 /* 资料  结束end */
+
+/* 列表页 start */
+.lists__container {
+    background-color:#060606;
+    padding-top:80px;
+}
+
+.lists__wrap {
+    font-family: "STFangsong";
+    text-align: center;
+}
+.lists__title h2{
+    font-size:36px;
+    color:#9a0000;
+}
+.lists__title h3{
+    font-size:30px;
+    color:#9a0000;
+}
+.lists__content li{
+    float: left;
+    width: 290px;
+}
+.lists__content li a{
+    display: block;
+}
+.lists__content li img{
+    width: 290px;
+    height: 290px;
+}
+/* 列表页 end */
