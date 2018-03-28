@@ -193,7 +193,9 @@ ul {
     height: 0;
     clear: both;
 }
-
+.hide{
+    display: none;
+}
 /* 公共浮动样式 */
 
 /* 分页代码 start*/
