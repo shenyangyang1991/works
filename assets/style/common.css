@@ -1,5 +1,8 @@
 /* reset */
-
+@font-face {
+    font-family: 'STXINGKA';
+    src: local('STXINGKA'), url('STXINGKA.OTF') format('OpenType');
+}
 body {
     min-width: 1200px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -130,7 +133,10 @@ a{
     color: #912b26;
     border-bottom: 2px solid #912b26;
 }
-
+.menu-header__wrap > ul > li > a > span:hover {
+    color: #912b26;
+    border-bottom: 2px solid #912b26;
+}
 .menu-header__wrap > ul > li > .menu-search {
     position: relative;
     width: 200px;
@@ -256,10 +262,11 @@ a{
 .banners{
     width: 100%;
     height: 340px;
+    background-color: #060606;
     overflow: hidden;
 }
 .banners img{
-   width: 100%;
+    width: 100%;
     height: 360px;
 }
 .swiper-container {
@@ -270,8 +277,7 @@ a{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-
+    background: #fff; 
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,6 +298,7 @@ a{
 }
 .swiper-slide > a{
     display: block;
+    width: 100%;
 }
 .swiper-pagination-bullet {
     width: 90px;

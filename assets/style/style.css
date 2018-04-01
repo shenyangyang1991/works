@@ -1,32 +1,4 @@
-.declaration-order {
-  /* Positioning */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
 
-  /* Box-model */
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;
-
-  /* Typography */
-  font: normal 13px "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #333;
-  text-align: center;
-
-  /* Visual */
-  background-color: #f5f5f5;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-
-  /* Misc */
-  opacity: 1;
-}
 
 /* 关于我们  开始 */
 
@@ -35,7 +7,7 @@
 }
 
 .about-me__wrap {
-    font-family: "STFangsong";
+    font-family: "STXINGKA";
     text-align: center;
 }
 
@@ -134,7 +106,7 @@
 }
 
 .source__wrap {
-    font-family: "STFangsong";
+    font-family: "STXINGKA";
     text-align: center;
 }
 .source__wrap li{
@@ -158,16 +130,19 @@
 }
 
 .source__wrap h2 {
+    font-family: 'Microsoft Yahei';
     text-align: left;
     font-size: 30px;
     color:#dedede;
     line-height: 50px; 
 }
 .source__wrap h4 {
+    font-family: 'Microsoft Yahei';
     margin-bottom:15px;
     text-align: left;  
 }
 .source__wrap p {
+    font-family: 'Microsoft Yahei';
     text-indent: 2rem;
     text-align: left; 
     height: 50px;
@@ -225,14 +200,16 @@
 }
 
 .lists__wrap {
-    font-family: "STFangsong";
+    font-family: "STXINGKA";
     text-align: center;
 }
 .lists__title h2{
+    font-family: STXINGKA;
     font-size:36px;
     color:#9a0000;
 }
 .lists__title h3{
+    font-family: STXINGKA;
     font-size:30px;
     color:#9a0000;
 }
@@ -266,6 +243,7 @@
     height: 290px;
 }
 .lists__content li .txt{
+    font-family: 'Microsoft Yahei';
      width: 260px;
     height: 110px;
     padding: 15px;
@@ -279,6 +257,7 @@
 .lists__content li h5{
     font-size: 14px;
     font-weight: lighter;
+    line-height: 36px;
 }
 .lists__content li p{
     font-size: 12px;
@@ -306,7 +285,7 @@
 .lists__content nav .line {  
     float: right;
     border-top: 1px solid #252525;
-    width: 90%; 
+    width: 1050px; 
     margin-top:19px;
 }  
 .lists__content nav .txt {  
@@ -379,7 +358,7 @@
 }
 .media__wrap__list{
 
-    font-family: "STFangsong";
+    font-family: "STXINGKA";
 }
 .media__wrap__list ul{
     margin-top:35px;
@@ -399,6 +378,7 @@
 }
 .media__wrap__list li:hover a{
     color:#fff;
+    text-decoration: none;
 }
 .media__wrap__list li a{
       display: block;
@@ -418,9 +398,11 @@
 }
 .media__wrap__list li h4{
     font-size: 36px;
+    font-size: 50px;
 }
 
 .media__wrap__list li p{
+    font-family: 'Microsoft Yahei';
     text-indent: 2rem;
     font-size: 12px;
     width: 100%;
@@ -435,14 +417,15 @@
 .index_container {
     background-color:#060606;
     padding-top:30px;
-    font-family: "STFangsong";
+    font-family: "STXINGKA";
 }
 
 .index__wrap {
-    font-family: "STFangsong";
+    font-family: STXINGKA;
     text-align: center;
 }
 .media__wrap_title{
+    font-family: STXINGKA;
     text-align: center;
     font-size: 12px;
     color:#949494;
@@ -452,6 +435,9 @@
     line-height: 70px;
     font-weight: bold;
     color: #9a0000;
+}
+.media__wrap_title > div{
+    font-family: 'Microsoft Yahei';
 }
 .list__wrap__list{
     text-align: center;
@@ -556,7 +542,7 @@
     height: 30px;
     line-height: 30px;
     text-align: left;
-    color:#fff;
+    color:#949494;
     font-size:30px;
     overflow: hidden;
     text-indent:37px;
@@ -564,10 +550,10 @@
 }
 .sub_content  a > div i{
     display: block;
-    width: 71px;
-    height: 72px;
-    background: url(../image/poster.png) no-repeat;
-    margin-left:30px;
+    width: 55px;
+    height: 55px;
+    background: url(../image/poster2.png) no-repeat;
+    margin-left:35px;
 
 }
 .sub_content  a:hover aside{

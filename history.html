@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>列表页</title>
+    <title>浏览页</title>
     <link rel="stylesheet" href="./assets/style/swiper.min.css">
     <link rel="stylesheet" href="./assets/style/common.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -45,7 +45,7 @@
     <div class="lists__container">
         <div class="lists__wrap layout">
             <div class="lists__title">
-                <h2>我的收藏</h2>
+                <h2>我的浏览</h2>
                 <h3>My collection</h3>
             </div>
             <div class="lists__content">
@@ -278,6 +278,8 @@
         $('header').load('./components/common-header.html');
         $('footer').load('./components/common-footer.html');
         var swiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            speed: 1000,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
