@@ -24,16 +24,19 @@
                 <h2>自然科學類</h2>
                 <h3>NATURAL SCIENCE</h3>
             </div>
-            <div class="lists__content">
+            <div class="lists__content spe">
                 <ul class="clearfix">
                     <li>
                         <div class="pic">
                             <a href="###">
                                 <img src="./assets/image/1.jpg">
+                                
                             </a>
                         </div>
                         <div class="txt">
                             <a href="###">
+                                <i class="icon_share"></i>
+                                <i class="icon_heart"></i>
                                 <h4>李曦沐</h4>
                                 <h5>原国家测绘局局长</h5>
                                 <p>李曦沐同志1922年10月生，辽宁新宾人。1945年 5月参加革命工作，1945年9月加入中国共产党...</p>
@@ -147,7 +150,7 @@
 
 
         // 是否收藏
-        $(".source__switch__content li i").click(function () {
+        $(".lists__content.spe li .txt i").click(function () {
             if ($(this).hasClass("active")) {
                 $(this).removeClass("active");
                 $(this).closest("li").removeClass("active");
